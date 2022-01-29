@@ -52,10 +52,6 @@ h1 {
     height: 450px;
 }
 
-.images-container {
-    overflow: hidden;
-}
-
 .img {
     transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
