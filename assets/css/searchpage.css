@@ -7,3 +7,44 @@
     --mont: 'Montserrat', cursive;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    background-color: var(--wine);
+}
+
+/* Styling headers */
+h1,
+h5 {
+    font-family: var(--mont);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+/* Styling button(s)*/
+#ingredients-btn {
+    font-family: var(--mont);
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--wine);
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+}
+
+#ingredients-btn:hover {
+    cursor: pointer;
+    font-size: 25px;
+    color: var(--wine);
+    background-color: lightgray;
+    transition: all 0.3s ease-in-out;
+}

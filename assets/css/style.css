@@ -25,7 +25,7 @@ header {
 }
 
 body {
-    font-family:var(--mont);
+    font-family: var(--mont);
     font-size: 20px;
     background-color: var(--wine); 
     color: #fff; 
@@ -65,6 +65,7 @@ h1 {
 
 /* Styling Button(s)*/
 #enter-btn {
+    font-family: var(--mont);
     font-size: 25px;
     font-weight: 500;
     color: var(--wine);
