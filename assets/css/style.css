@@ -25,7 +25,7 @@ header {
 }
 
 body {
-    font-family:var(--mont);
+    font-family: var(--mont);
     font-size: 20px;
     background-color: var(--wine); 
     color: #fff; 
@@ -43,6 +43,7 @@ h1 {
 .images-container {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .images-container img {
@@ -58,13 +59,20 @@ h1 {
     opacity 250ms linear;
 }
 
-.img:hover {
+.img:focus {
+    position: relative;
+}
+
+.img:hover,
+.img:focus {
     transform: scale(1.056);
     opacity: .75;
 }
 
+
 /* Styling Button(s)*/
 #enter-btn {
+    font-family: var(--mont);
     font-size: 25px;
     font-weight: 500;
     color: var(--wine);
