@@ -41,7 +41,8 @@ h1 {
 
 .description {
     margin-bottom: 50px;
-    /*color: black;*/
+    color: black;
+    font-size:25px;
 }
 
 /* Styling Images*/
