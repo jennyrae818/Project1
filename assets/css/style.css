@@ -39,6 +39,11 @@ h1 {
     user-select: none;
 }
 
+.description {
+    margin-bottom: 50px;
+    color: black;
+}
+
 /* Styling Images*/
 .images-container {
     display: flex;
