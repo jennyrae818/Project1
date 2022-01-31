@@ -1,5 +1,5 @@
 :root {
-    --pinkneutral: #EDC787; 
+    --pinkneutral: #EDC7B7; 
     --light: #EEE2DC;
     --grey: #BAB2b5; 
     --blue : #123C69;
@@ -16,7 +16,7 @@
 
 header {
     font-family: var(--mont);
-    font-size: 100px;
+    font-size: 50px;
     padding: 40px;
     text-align: center;
     background: var(--teal);
@@ -48,6 +48,7 @@ h1 {
 /* Styling Images*/
 .images-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
 }
@@ -55,8 +56,8 @@ h1 {
 .images-container img {
     margin-left: 5px;
     margin-right: 5px;
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 370px;
 }
 
 .img {
