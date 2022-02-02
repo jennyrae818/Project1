@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Josefin+Slab:wght@100&family=Licorice&family=Montserrat:wght@500&family=Vujahday+Script&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Corinthia&family=Josefin+Slab:wght@100&family=Licorice&family=Montserrat:wght@500&family=Vujahday+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <title>Name of Project</title>
-    <link rel="stylesheet" href="./assets/css/searchpage.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/searchpage.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <h1>Title</h1>
+      <h1>Peanut Butter and Jelly Sandwich</h1>
+      <!-- button displays ingredients-->
+      <button type="button" id="ingredients-btn">
+        Show me the ingredients!
+      </button>
     </header>
 
-    <section id="recipe-box">
-        <h5>Ingredient name</h5>
-        <div id="ingredients-list">
-            <ul></ul>
-        </div>
-    </section>
-
-    <!--This button will create cards of ingredients-->
-    <button type="button" id="ingredients-btn">Show me the ingredients!</button>
-
-    <div class="ingr-section">
-    <section class="ingr-card">
-        <!--Insert ingredients card-->
-        <header class="ingr-name">Ingredient Name</header>
-        <img class="img" src="./assets/images/spices.jpg" alt="spices" />
-        <ul>
+    <main class="container">
+      <div class="row ingr-section">
+        <section class="col ingr-card">
+          <header class="ingr-name">Peanut Butter</header>
+          <img />
+          <ul>
             <li class="price">Price</li>
             <li class="aisle">Aisle</li>
-        </ul>
-     </section>
+          </ul>
+        </section>
 
-     <section class="ingr-card">
-        <header class="ingr-name">Ingredient Name</header>
-        <img>
-        <ul>
+        <section class="col ingr-card">
+          <header class="ingr-name">Jelly/Jam</header>
+          <img />
+          <ul>
             <li class="price">Price</li>
             <li class="aisle">Aisle</li>
-        </ul>
-     </section>   
+          </ul>
+        </section>
 
-     <section class="ingr-card">
-        <header class="ingr-name">Ingredient Name</header>
-        <img>
-        <ul>
+        <section class="col ingr-card">
+          <header class="ingr-name">Bread</header>
+          <img />
+          <ul>
             <li class="price">Price</li>
             <li class="aisle">Aisle</li>
-        </ul>
-     </section>   
-
-    </div>
-</body>
+          </ul>
+        </section>
+      </div>
+      <section class="storemap">
+          <header>Stores Near You</header>
+          <map>map</map>
+    </main>
+  </body>
 </html>
