@@ -1,5 +1,5 @@
 :root {
-    --pinkneutral: #EDC787; 
+    --pinkneutral: #EDC7B7; 
     --light: #EEE2DC;
     --grey: #BAB2b5; 
     --blue : #123C69;
@@ -16,7 +16,7 @@
 
 header {
     font-family: var(--mont);
-    font-size: 100px;
+    font-size: 50px;
     padding: 40px;
     text-align: center;
     background: var(--teal);
@@ -25,7 +25,7 @@ header {
 }
 
 body {
-    font-family:var(--mont);
+    font-family: var(--mont);
     font-size: 20px;
     background-color: var(--wine); 
     color: #fff; 
@@ -39,17 +39,25 @@ h1 {
     user-select: none;
 }
 
+.description {
+    margin-bottom: 50px;
+    color: black;
+    font-size:25px;
+}
+
 /* Styling Images*/
 .images-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden;
 }
 
 .images-container img {
     margin-left: 5px;
     margin-right: 5px;
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 370px;
 }
 
 .img {
@@ -58,13 +66,20 @@ h1 {
     opacity 250ms linear;
 }
 
-.img:hover {
+.img:focus {
+    position: relative;
+}
+
+.img:hover,
+.img:focus {
     transform: scale(1.056);
     opacity: .75;
 }
 
+
 /* Styling Button(s)*/
 #enter-btn {
+    font-family: var(--mont);
     font-size: 25px;
     font-weight: 500;
     color: var(--wine);
