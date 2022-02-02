@@ -1,5 +1,5 @@
 :root {
-    --pinkneutral: #EDC787; 
+    --pinkneutral: #EDC7B7; 
     --light: #EEE2DC;
     --grey: #BAB2b5; 
     --blue : #123C69;
@@ -18,6 +18,13 @@ body {
     background-color: var(--wine);
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+}
+
 /* Styling headers */
 h1,
 h5 {
@@ -28,6 +35,51 @@ h5 {
 h1 {
     text-align: center;
 }
+
+ul {
+    list-style: circle outside;
+    padding-left: 40px;
+}
+ul li {
+    position: relative;
+    padding-left: 1px;
+}
+
+/* Ingredients cards */
+.ingr-section {
+    padding: 10px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1px;
+}
+
+.ingr-card {
+    height:fit-content;
+    width: fit-content;
+    padding: 20px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    background-color: var(--grey);
+    font-family: var(--mont);
+  }
+  
+  .ingr-card header {
+    text-align: center;
+    padding: 20px;
+    background: var(--blue);
+    color: #fff;
+  }
+  
+  .ingr-card img {
+    display: center;
+    margin: 5px;
+    width: 120px;
+    height: 150px; 
+  }
+
+
 /* Styling button(s)*/
 #ingredients-btn {
     font-family: var(--mont);
@@ -35,6 +87,7 @@ h1 {
     font-weight: 500;
     color: var(--wine);
     padding: 15px 30px;
+    margin: 10px;
     outline: none;
     border: none;
     border-radius: 5px;
