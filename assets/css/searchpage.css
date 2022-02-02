@@ -17,22 +17,19 @@
 body {
     background-color: var(--wine);
 }
-
-main {
+/* this code is commented out because it interfears with bootstrap */
+/* main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 60px;
-}
+} */
 
 /* Styling headers */
-h1,
-h5 {
+h1{
     font-family: var(--mont);
+    font-size: 40px;
     color: #fff;
-}
-
-h1 {
     text-align: center;
 }
 
@@ -46,13 +43,14 @@ ul li {
 }
 
 /* Ingredients cards */
-.ingr-section {
+/* this code is commented out because it interfears with bootstrap */
+/* .ingr-section {
     padding: 10px;
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     grid-gap: 1px;
-}
+} */
 
 .ingr-card {
     height:fit-content;
@@ -100,4 +98,13 @@ ul li {
     color: var(--wine);
     background-color: lightgray;
     transition: all 0.3s ease-in-out;
+}
+
+.storemap header{
+    font-family: var(--mont);
+    color: var(--light);
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+
 }
