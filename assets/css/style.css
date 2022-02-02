@@ -21,7 +21,6 @@ header {
     text-align: center;
     background: var(--teal);
     color: #fff;
-    border-bottom:30px #879274;
 }
 
 body {
@@ -37,13 +36,10 @@ body {
 
 h1 {
     user-select: none;
+    margin-bottom: 30px;
 }
 
-.description {
-    margin-bottom: 50px;
-    color: black;
-    font-size:25px;
-}
+
 
 /* Styling Images*/
 .images-container {
@@ -64,6 +60,7 @@ h1 {
     transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
+    opacity: .4;
 }
 
 .img:focus {
@@ -76,9 +73,20 @@ h1 {
     opacity: .75;
 }
 
+/*text stylzing*/
+
+.centered {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
 
 /* Styling Button(s)*/
 #enter-btn {
+    margin-top: 50px;
     font-family: var(--mont);
     font-size: 25px;
     font-weight: 500;
