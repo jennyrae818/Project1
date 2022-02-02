@@ -1,0 +1,74 @@
+<mxfile host="65bd71144e">
+    <diagram id="gZhmQnc_LHd9KHy5Ai3U" name="Page-1">
+        <mxGraphModel dx="1042" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Page Title" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="280" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Button" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="380" y="180" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Footer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="580" width="640" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Div with name for this section (&quot;Shop ingredients&quot;)." style="swimlane;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="280" width="640" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Ingredient 2" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=20;" vertex="1" parent="43">
+                    <mxGeometry x="225" y="60" width="190" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="&lt;ul&gt;&lt;li&gt;Name&amp;nbsp;&lt;/li&gt;&lt;li&gt;Price&lt;/li&gt;&lt;li&gt;Isle&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="49">
+                    <mxGeometry y="30" width="190" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Ingredient 3" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=20;" vertex="1" parent="43">
+                    <mxGeometry x="430" y="60" width="190" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;ul&gt;&lt;li&gt;Name&lt;/li&gt;&lt;li&gt;Price&lt;/li&gt;&lt;li&gt;Isle&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="23">
+                    <mxGeometry y="30" width="190" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Ingredient 1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontSize=20;" vertex="1" parent="43">
+                    <mxGeometry x="20" y="60" width="190" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="&lt;ul&gt;&lt;li&gt;Name&amp;nbsp;&lt;/li&gt;&lt;li&gt;Price&amp;nbsp;&lt;/li&gt;&lt;li&gt;Isle&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="50">
+                    <mxGeometry y="30" width="190" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="Div with unordred list of ingredients for recipe (&quot;Make a PBJ&quot;)." style="swimlane;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="40" width="640" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&lt;ul&gt;&lt;li&gt;Ingredient 1&lt;/li&gt;&lt;li&gt;Ingredient 2&lt;/li&gt;&lt;li&gt;Ingredient 3&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="44">
+                    <mxGeometry x="-10" y="10" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="Img" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="390" width="40" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Img" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="390" width="40" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="Img" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="390" width="40" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="endArrow=classic;html=1;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="7" target="43">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="320" y="250" as="sourcePoint"/>
+                        <mxPoint x="480" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" value="Clicking Button Creates Div, Based on list of ingrediens divs for ingredients are creted" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=20;" connectable="0" vertex="1" parent="62">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="Source" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=20;" connectable="0" vertex="1" parent="62">
+                    <mxGeometry x="-1" relative="1" as="geometry">
+                        <mxPoint x="250" y="-110" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="65" value="Target" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=20;" connectable="0" vertex="1" parent="62">
+                    <mxGeometry x="1" relative="1" as="geometry">
+                        <mxPoint x="310" y="260" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
