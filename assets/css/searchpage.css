@@ -19,7 +19,7 @@
  } */
 
 body {
-    background-color: var(--wine);
+    background-image: linear-gradient(var(--wine), var(--pinkneutral));
 }
 
 h1{
