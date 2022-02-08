@@ -20,13 +20,41 @@
 
 body {
     background-image: linear-gradient(var(--wine), var(--pinkneutral));
+    font-family: var(--mont);
+    text-align: center;
 }
 
-h1{
+
+h1 {
     font-family: var(--mont);
-    font-size: 40px;
+    font-size: 100px;
     color: #fff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--light);
+}
+
+p {
+    color: var(--light);
+}
+
+.box {
     text-align: center;
+    border: 5px;
+    border-style: solid;
+    padding: 40px;
+}
+
+.box h2 {
+    color: var(--light);
+    font-size: 24px;
+}
+
+.box p {
+    color: #ffff;
+    font-size: 16px;
 }
 
 ul {
