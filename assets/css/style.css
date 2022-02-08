@@ -7,7 +7,6 @@
     --mont: 'Montserrat', cursive;
 }
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +25,7 @@ header {
 body {
     font-family: var(--mont);
     font-size: 20px;
-    background-image: linear-gradient(var(--wine), var(--pinkneutral));
+    background-image: linear-gradient(var(--wine) 48%, var(--pinkneutral) 50%, var(--wine));
     color: #fff; 
     display: flex;
     flex-direction: column;
@@ -40,7 +39,7 @@ h1 {
 }
 
 
-/* Styling Images*/
+/* Styling Images */
 .images-container {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +71,7 @@ h1 {
     opacity: .75;
 }
 
-/*text stylzing*/
+/* Text stylzing */
 
 .centered {
     position: absolute;
@@ -83,25 +82,49 @@ h1 {
     z-index: 10;
   }
 
-/* Styling Button(s)*/
-#enter-btn {
-    margin-top: 50px;
-    font-family: var(--mont);
-    font-size: 25px;
-    font-weight: 500;
-    color: var(--wine);
-    padding: 15px 30px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    background-image: radial-gradient(circle, rgba(238,226,220,1) 100%, rgba(238,174,202,1) 0%);
-}
+/* Styling button */
 
-#enter-btn:hover {
-    cursor: pointer;
+.button {
+    margin-top: 50px;
+    border-radius: 4px;
+    background-image: radial-gradient(circle, rgba(238,226,220,1) 100%, rgb(206, 121, 158) 0%);
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    text-align: center;
     font-size: 25px;
-    color: var(--wine);
-    background-color: lightgray;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    transition: all 0.3s ease-in-out;
+    padding: 15px 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\1F374';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+    color: var(--blue);
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+*{
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px darkgreen;
 }
