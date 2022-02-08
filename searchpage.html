@@ -7,362 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cookify</title>
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Josefin+Slab:wght@100&family=Licorice&family=Montserrat:wght@500&family=Vujahday+Script&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Corinthia&family=Josefin+Slab:wght@100&family=Licorice&family=Montserrat:wght@500&family=Vujahday+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/searchpage.css" />
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-  <link href="./assets/css/locatorplus.css" rel="stylesheet" />
-  <script src="./assets/js/locatorplus.js"></script>
-  <script>
-      const CONFIGURATION = {
-        locations: [
-          {
-            title: "4500 Wallingford Ave N",
-            address1: "4500 Wallingford Ave N",
-            address2: "Seattle, WA 98103, USA",
-            coords: { lat: 47.66189276161085, lng: -122.33602251779098 },
-            placeId: "ChIJtyTxU1cUkFQRmKUpvbxmv6g",
-          },
-          {
-            title: "1401 Broadway",
-            address1: "1401 Broadway",
-            address2: "Seattle, WA 98122, USA",
-            coords: { lat: 47.613887101458744, lng: -122.32123328346711 },
-            placeId: "ChIJkbTidcxqkFQR63amf3moQ7Y",
-          },
-          {
-            title: "417 Broadway E",
-            address1: "417 Broadway E",
-            address2: "Seattle, WA 98102, USA",
-            coords: { lat: 47.62287941177418, lng: -122.32159813558197 },
-            placeId:
-              "EiY0MTcgQnJvYWR3YXkgRSwgU2VhdHRsZSwgV0EgOTgxMDIsIFVTQSJREk8KNAoyCckrIN8tFZBUERggOs_sUcuQGh4LEO7B7qEBGhQKEgmDfvKn2BSQVBFk7C1QgLDxRAwQoQMqFAoSCe9v97EgFZBUEcYb2Qnt9yt7",
-          },
-          {
-            title: "500 Mercer St",
-            address1: "500 Mercer St",
-            address2: "Seattle, WA 98109, USA",
-            coords: { lat: 47.62485422398104, lng: -122.34715319325407 },
-            placeId: "ChIJP2o5QkcVkFQRhcqCq56D1X4",
-          },
-          {
-            title: "2707 Rainier Ave S",
-            address1: "2707 Rainier Ave S",
-            address2: "Seattle, WA 98144, USA",
-            coords: { lat: 47.578805433948496, lng: -122.2998397932541 },
-            placeId: "ChIJK1dPamJqkFQRKV6fd1z0WRs",
-          },
-          {
-            title: "4550 42nd Ave SW",
-            address1: "4550 42nd Ave SW",
-            address2: "Seattle, WA 98116, USA",
-            coords: { lat: 47.561326760756714, lng: -122.38515890674591 },
-            placeId: "ChIJwxmJC_lAkFQRrwq8gtSaY-I",
-          },
-          {
-            title: "1600 W Dravus St",
-            address1: "1600 W Dravus St",
-            address2: "Seattle, WA 98119, USA",
-            coords: { lat: 47.64964308108993, lng: -122.37792376441803 },
-            placeId: "ChIJU1Lnr5gVkFQRo50g5ZYxwUo",
-          },
-          {
-            title: "915 NW 45th St",
-            address1: "915 NW 45th St",
-            address2: "Seattle, WA 98107, USA",
-            coords: { lat: 47.65978893423737, lng: -122.36802269325409 },
-            placeId: "ChIJG4yrXrAVkFQRmpNyngCItCg",
-          },
-          {
-            title: "2746 NE 45th St",
-            address1: "2746 NE 45th St",
-            address2: "Seattle, WA 98105, USA",
-            coords: { lat: 47.66216864242529, lng: -122.29640893558197 },
-            placeId: "ChIJm5W_koUUkFQRqvZ0RVKHMCk",
-          },
-          {
-            title: "7823 SE 28th St",
-            address1: "7823 SE 28th St",
-            address2: "Mercer Island, WA 98040, USA",
-            coords: { lat: 47.584885066570656, lng: -122.23282046441803 },
-            placeId: "ChIJN5FJfrlrkFQR_ERrGHSAIYc",
-          },
-          {
-            title: "5700 24th Ave NW",
-            address1: "5700 24th Ave NW",
-            address2: "Seattle, WA 98107, USA",
-            coords: { lat: 47.670593332929435, lng: -122.38713932446746 },
-            placeId:
-              "Eig1NzAwIDI0dGggQXZlIE5XLCBTZWF0dGxlLCBXQSA5ODEwNywgVVNBIlESTwo0CjIJKeg3psUVkFQRWOuOODcqz4gaHgsQ7sHuoQEaFAoSCZeJEoK4FZBUEWTQ8TnassCADBDELCoUChIJjVZQgH8WkFQRnuCshFMDt40",
-          },
-          {
-            title: "2500 SW Barton St",
-            address1: "2500 SW Barton St",
-            address2: "Seattle, WA 98106, USA",
-            coords: { lat: 47.52132384325709, lng: -122.36502863320464 },
-            placeId:
-              "EikyNTAwIFNXIEJhcnRvbiBTdCwgU2VhdHRsZSwgV0EgOTgxMDYsIFVTQSJREk8KNAoyCenZuKlgQZBUEbQv6BwIhAe-Gh4LEO7B7qEBGhQKEgmTpEBydUGQVBEQ-LEmXN5RKAwQxBMqFAoSCb8KGKtdQZBUEVzYkXZvMSdx",
-          },
-          {
-            title: "Parking lot",
-            address1: "Parking lot",
-            address2: "10116 NE 8th St, Bellevue, WA 98004, USA",
-            coords: { lat: 47.61862773697056, lng: -122.20563479325409 },
-            placeId: "ChIJIZZMeIVskFQRrUuuInMqIqA",
-          },
-          {
-            title: "100 NW 85th St",
-            address1: "100 NW 85th St",
-            address2: "Seattle, WA 98117, USA",
-            coords: { lat: 47.691993694860926, lng: -122.35919249325408 },
-            placeId: "ChIJ8aL1XSAUkFQRh47gnhOW-Ts",
-          },
-          {
-            title: "2636 Bellevue Way NE",
-            address1: "2636 Bellevue Way NE",
-            address2: "Bellevue, WA 98004, USA",
-            coords: { lat: 47.634797018510426, lng: -122.20075082209013 },
-            placeId: "ChIJsY9wy8FskFQRl2o-JWygWno",
-          },
-          {
-            title: "Parking lot",
-            address1: "Parking lot",
-            address2: "8421 SE 68th St, Mercer Island, WA 98040, USA",
-            coords: { lat: 47.5410556197282, lng: -122.22607816441803 },
-            placeId: "ChIJr3qC8JZpkFQRJjyx_C4RP1I",
-          },
-          {
-            title: "9999 Holman Rd NW",
-            address1: "9999 Holman Rd NW",
-            address2: "Seattle, WA 98117, USA",
-            coords: { lat: 47.701865562944086, lng: -122.36394789325409 },
-            placeId: "ChIJk5nI2qIWkFQRaApAxJynibg",
-          },
-          {
-            title: "11100 Roosevelt Way NE",
-            address1: "11100 Roosevelt Way NE",
-            address2: "Seattle, WA 98125, USA",
-            coords: { lat: 47.70942402614171, lng: -122.31729159325408 },
-            placeId: "ChIJX8y8tVkRkFQRdpqtgDJ4jF8",
-          },
-          {
-            title: "3550 Factoria Blvd SE",
-            address1: "3550 Factoria Blvd SE",
-            address2: "Bellevue, WA 98006, USA",
-            coords: { lat: 47.578666411596984, lng: -122.16795166441803 },
-            placeId:
-              "Ei4zNTUwIEZhY3RvcmlhIEJsdmQgU0UsIEJlbGxldnVlLCBXQSA5ODAwNiwgVVNBIlESTwo0CjIJUVhwSgBskFQRMaVzwZUQJagaHgsQ7sHuoQEaFAoSCRlFmbo0aZBUEZvrPGKCniv-DBDeGyoUChIJBag7blRpkFQRIZrg2afBmpA",
-          },
-          {
-            title: "425 Urban Plz",
-            address1: "425 Urban Plz",
-            address2: "Kirkland, WA 98033, USA",
-            coords: { lat: 47.67754776034341, lng: -122.19930573558197 },
-            placeId: "ChIJA-MQg8ISkFQRqwQ98MwRcZc",
-          },
-          {
-            title: "1510 145th Pl SE",
-            address1: "1510 145th Pl SE",
-            address2: "Bellevue, WA 98007, USA",
-            coords: { lat: 47.59698658766883, lng: -122.14844120674591 },
-            placeId: "ChIJmfkAYztskFQR-GVTjq2Yw1E",
-          },
-          {
-            title: "13000 Lake City Way NE",
-            address1: "13000 Lake City Way NE",
-            address2: "Seattle, WA 98125, USA",
-            coords: { lat: 47.72397379242708, lng: -122.29232480912323 },
-            placeId:
-              "Ei4xMzAwMCBMYWtlIENpdHkgV2F5IE5FLCBTZWF0dGxlLCBXQSA5ODEyNSwgVVNBIlESTwo0CjIJOzgEFXoRkFQRPHuzyZfbtIsaHgsQ7sHuoQEaFAoSCSPd3KhmEZBUEZze4ffkBnCBDBDIZSoUChIJy3CJRH4RkFQRTPvDJo2Guew",
-          },
-          {
-            title: "2041 148th Ave NE",
-            address1: "2041 148th Ave NE",
-            address2: "Bellevue, WA 98007, USA",
-            coords: { lat: 47.62890862410307, lng: -122.14457389325409 },
-            placeId: "ChIJVfPoIKhtkFQRuE6frtJTlEk",
-          },
-          {
-            title: "14300 1st Ave S",
-            address1: "14300 1st Ave S",
-            address2: "Burien, WA 98168, USA",
-            coords: { lat: 47.475178871557695, lng: -122.33384116441802 },
-            placeId:
-              "EiYxNDMwMCAxc3QgQXZlIFMsIEJ1cmllbiwgV0EgOTgxNjgsIFVTQSJREk8KNAoyCbevM-17Q5BUEbLdstakNVvtGh4LEO7B7qEBGhQKEgkd4_ubAUOQVBGIYORHOnryBgwQ3G8qFAoSCXW6c0rHQ5BUEe3X_MK0EYmd",
-          },
-          {
-            title: "6940 Coal Creek Pkwy SE",
-            address1: "6940 Coal Creek Pkwy SE",
-            address2: "Newcastle, WA 98059, USA",
-            coords: { lat: 47.53904936122348, lng: -122.1647924625656 },
-            placeId: "ChIJmcwUGB9pkFQRw5ESiHiwGaw",
-          },
-          {
-            title: "Northeast 145th Street",
-            address1: "NE 145th St",
-            address2: "Seattle, WA 98155, USA",
-            coords: { lat: 47.73393715661718, lng: -122.30735399325408 },
-            placeId:
-              "EiNORSAxNDV0aCBTdCwgU2VhdHRsZSwgV0EgOTgxNTUsIFVTQSIuKiwKFAoSCc_8YPkMEZBUEUoanhgMaSMGEhQKEgkRFOgQTRCQVBF-_qq3j4gQlg",
-          },
-          {
-            title: "15600 NE 8th St",
-            address1: "15600 NE 8th St",
-            address2: "Bellevue, WA 98008, USA",
-            coords: { lat: 47.6172378985326, lng: -122.1307641932541 },
-            placeId: "ChIJAxz3zbBtkFQRDRKUVBvseck",
-          },
-          {
-            title: "Parking lot",
-            address1: "Parking lot",
-            address2: "14130 Juanita Dr NE, Bothell, WA 98011, USA",
-            coords: { lat: 47.72915858509617, lng: -122.24306466441803 },
-            placeId: "ChIJo46gJB4SkFQRThysYC6eMm8",
-          },
-          {
-            title: "12221 120th Ave NE",
-            address1: "12221 120th Ave NE",
-            address2: "Kirkland, WA 98034, USA",
-            coords: { lat: 47.708458421674166, lng: -122.18420062209015 },
-            placeId: "ChIJP5C1vYANkFQRAewttR1v46g",
-          },
-          {
-            title: "11224 NE 124th St",
-            address1: "11224 NE 124th St",
-            address2: "Kirkland, WA 98034, USA",
-            coords: { lat: 47.712335855326145, lng: -122.19118823558198 },
-            placeId: "ChIJofkABngSkFQR3eVPPTgciKU",
-          },
-          {
-            title: "365 Renton Center Way SW",
-            address1: "365 Renton Center Way SW",
-            address2: "Renton, WA 98057, USA",
-            coords: { lat: 47.47734509088743, lng: -122.21912605092622 },
-            placeId:
-              "Ei8zNjUgUmVudG9uIENlbnRlciBXYXkgU1csIFJlbnRvbiwgV0EgOTgwNTcsIFVTQSJREk8KNAoyCeE5R1myQpBUES8aEPtx_yyEGh4LEO7B7qEBGhQKEgm_Ki7mrkKQVBHA0ywFlvWwnwwQ7QIqFAoSCdtjXIqyQpBUEZpR16sFsJET",
-          },
-          {
-            title: "15800 Redmond Way",
-            address1: "15800 Redmond Way",
-            address2: "Redmond, WA 98052, USA",
-            coords: { lat: 47.67586021993052, lng: -122.12888360674592 },
-            placeId: "ChIJQQeYBa1ykFQR5gsYKWyR7TA",
-          },
-          {
-            title: "8867 161st Avenue Northeast",
-            address1: "8867 161st Avenue Northeast",
-            address2: "Redmond, WA 98052, USA",
-            coords: { lat: 47.68084019174292, lng: -122.1261459932541 },
-            placeId: "ChIJjZ0V_EwNkFQRlNYRA99kufQ",
-          },
-          {
-            title: "18325 Aurora Ave N",
-            address1: "18325 Aurora Ave N",
-            address2: "Shoreline, WA 98133, USA",
-            coords: { lat: 47.761965615561444, lng: -122.34778822209016 },
-            placeId: "ChIJx_WQpfIQkFQRK5tuzaO3mM4",
-          },
-          {
-            title: "17847 1st Ave S",
-            address1: "17847 1st Ave S",
-            address2: "Normandy Park, WA 98148, USA",
-            coords: { lat: 47.44179870279018, lng: -122.33569486441802 },
-            placeId: "ChIJlUrytbVEkFQRCG1OjEnWyAY",
-          },
-          {
-            title: "4800 NE 4th St",
-            address1: "4800 NE 4th St",
-            address2: "Renton, WA 98059, USA",
-            coords: { lat: 47.48854369305092, lng: -122.15518939325409 },
-            placeId:
-              "EiU0ODAwIE5FIDR0aCBTdCwgUmVudG9uLCBXQSA5ODA1OSwgVVNBIlESTwo0CjIJt-R2D9pnkFQR7ppyUNH3oFgaHgsQ7sHuoQEaFAoSCSvYxEYiZpBUERVwUFj1PDwZDBDAJSoUChIJ-15s_cxnkFQRoVEuMHAA_IM",
-          },
-          {
-            title: "600 NW Richmond Beach Rd",
-            address1: "600 NW Richmond Beach Rd",
-            address2: "Shoreline, WA 98177, USA",
-            coords: { lat: 47.76514173998274, lng: -122.36404463558198 },
-            placeId:
-              "EjI2MDAgTlcgUmljaG1vbmQgQmVhY2ggUmQsIFNob3JlbGluZSwgV0EgOTgxNzcsIFVTQSJREk8KNAoyCTMGRcOWEJBUEcm7GjGcZNj7Gh4LEO7B7qEBGhQKEgkB2k-P0RCQVBGoe0JF4fslSQwQ2AQqFAoSCR3tkVuXEJBUESdgkGxdQcZd",
-          },
-          {
-            title: "17667 NE 76th St",
-            address1: "17667 NE 76th St",
-            address2: "Redmond, WA 98052, USA",
-            coords: { lat: 47.6705941543502, lng: -122.10469049325408 },
-            placeId: "ChIJveYkHrlykFQRgVZpvv5gG_s",
-          },
-          {
-            title: "18921 Bothell Way NE",
-            address1: "18921 Bothell Way NE",
-            address2: "Bothell, WA 98011, USA",
-            coords: { lat: 47.76527307175458, lng: -122.21158993558197 },
-            placeId: "ChIJe4aebkEOkFQRHDQrjevbJ7I",
-          },
-          {
-            title: "17801 108th Ave SE",
-            address1: "17801 108th Ave SE",
-            address2: "Renton, WA 98055, USA",
-            coords: { lat: 47.442995879122066, lng: -122.19985000674589 },
-            placeId: "ChIJB4qtHAxdkFQR03C-cyu-6cI",
-          },
-          {
-            title: "Park Hills Shopping Center",
-            address1: "Park Hills Shopping Center",
-            address2: "22803 44th Ave W, Mountlake Terrace, WA 98043, USA",
-            coords: { lat: 47.79054970307136, lng: -122.2904977932541 },
-            placeId: "ChIJSVbwWR0QkFQR2pghrl7gip4",
-          },
-          {
-            title: "22828 100th Ave W",
-            address1: "22828 100th Ave W",
-            address2: "Edmonds, WA 98020, USA",
-            coords: { lat: 47.791393259469714, lng: -122.36770309325408 },
-            placeId: "ChIJYak9m2IakFQR0Uc5gA7W-ks",
-          },
-          {
-            title: "1540 NW Gilman Blvd",
-            address1: "1540 NW Gilman Blvd",
-            address2: "Issaquah, WA 98027, USA",
-            coords: { lat: 47.546596923479854, lng: -122.06035606441803 },
-            placeId: "ChIJKd92NHVvkFQRdu4rDXahlPY",
-          },
-        ],
-        mapOptions: {
-          center: { lat: 38.0, lng: -100.0 },
-          fullscreenControl: true,
-          mapTypeControl: false,
-          streetViewControl: false,
-          zoom: 4,
-          zoomControl: true,
-          maxZoom: 17,
-        },
-        mapsApiKey: "AIzaSyDFpM5INXn40PxVvDqA4ylSnFzGHcznKDw",
-      };
-
-  function initMap() {
-        new LocatorPlus(CONFIGURATION);
-      }
-    </script>
-    <script id="locator-result-items-tmpl" type="text/x-handlebars-template">
-      {{#each locations}}
-        <li class="location-result" data-location-index="{{index}}">
-          <button class="select-location">
-            <h2 class="name">{{title}}</h2>
-          </button>
-          <div class="address">{{address1}}<br />{{address2}}</div>
-        </li>
-      {{/each}}
-    </script>
+  
 </head>
 
 <body>
@@ -379,15 +30,15 @@
       For now,  we only have PB&J - yum! Time to dig in...
     </p>
     <p>
-    Click "Show me the ingredients!" to see available ingredients.
+    Click "Show me the ingredients!" to locate each in your nearby store
     </p>
     <p>
-    Find the closest store on the map below & start shopping!
+    Find the closest store to you on the map below & start shopping!
     </p>
   </div>
 
   <!-- The ingredients are displayed in this div -->
-  <div id="ingr-box" class="box">
+  <div id="ingr-box">
     <h2>Ingredients</h2>
     <p>Click the button below to start shopping for ingredients.</p>
     <!--This button will create cards of ingredients-->
@@ -398,46 +49,29 @@
   </div>
 
   <!-- The map should go here -->
-  <div id="map-box" class="box">
-    <h2>Store Locator</h2>
-    <p>You can find nearby stores below.</p>
-  </div>
+  <form>
+    <label for="zip" id="text1"></span>Find your store now!</label><br>
+    <input id="zip" name="zip" type="text" pattern="[0-9]*">
+    <input type="submit" value="Submit" id="button1">
+  </form>
+  <section id="krogermap"></section>
 
-    <div id="map-container">
-      <div id="locations-panel">
-        <div id="locations-panel-list">
-          <header>
-            <h1 class="search-title">
-              <img src="https://fonts.gstatic.com/s/i/googlematerialicons/place/v15/24px.svg" />
-              Find a location near you
-            </h1>
-            <div class="search-input">
-              <input id="location-search-input" placeholder="Enter your address or zip code" />
-              <div id="search-overlay-search" class="search-input-overlay search">
-                <button id="location-search-button">
-                  <img class="icon" src="https://fonts.gstatic.com/s/i/googlematerialicons/search/v11/24px.svg"
-                    alt="Search" />
-                </button>
-              </div>
-            </div>
-          </header>
-          <div class="section-name" id="location-results-section-name">
-            All locations
-          </div>
-          <div class="results">
-            <ul id="location-results-list"></ul>
-          </div>
-        </div>
-      </div>
-      <div id="map"></div>
-    </div>
+  <!--The div element for the map -->
 
-  <script src="./assets/js/searchpage.js"></script>
-  <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFpM5INXn40PxVvDqA4ylSnFzGHcznKDw&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v4_cA"
-      async
-      defer
-    ></script>
+  <!-- zipcode error modal -->
+  <section class="zipModal" title="Error">
+    <p>Your zipcode should be 5 digits!</p>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="./assets/js/initMap.js"></script>
+  <script defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFpM5INXn40PxVvDqA4ylSnFzGHcznKDw&libraries=places&callback=initMap"></script>
+  <!-- <script src="./assets/js/searchpage.js"></script> -->
+  <script src="./assets/js/mapMarker.js"></script>
 </body>
 
 </html>

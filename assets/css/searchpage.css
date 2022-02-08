@@ -135,4 +135,30 @@ align-items: center;
     opacity: unset;
 }
 
+#zip {
+	width: 15vw;
+	margin: auto;
+}
+
+#button1 {
+	width: 80px;
+	margin: auto;
+	font-size: 20px;
+}
+
+form {
+	margin: auto;
+	padding: 5px;
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+}
+
+/* Styling to make map section visible. */
+#krogermap {
+	height: 400px;
+	width: 50%;
+	margin: auto;
+}
 
