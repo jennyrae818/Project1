@@ -1,11 +1,15 @@
 // geocoder for zip code to location conversations
 var geocoder;
+
 // Service to query community gardens
 var service;
+
 // The map to display them all
 var map;
+
 // Infowindow
 var infowindow;
+
 // Coords to center the map initially
 var coords = { lat: 47.6142, lng: -122.1937 };
 

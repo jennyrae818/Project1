@@ -1,16 +1,21 @@
 // creating Welcome modal and zipmodal variable
 var $modal = $('.modal');
 var $zipModal = $('.zipModal');
-// Array to store the kroger markers
+
+// Array to store the markers
 var markers = [];
+
 // creating input variable and search button variable
 var zipInput = document.querySelector('#zip');
 var searchBtn = document.querySelector('#button1');
+
 // will be used later to pull zip value
 var getZip;
+
 // variables for displaying zone results and creating appropriate link
 var results = document.querySelector('.results');
 var zoneLink = document.querySelector('#zoneLink');
+
 // variable to store city name
 var cityName = '';
 
@@ -35,7 +40,7 @@ var createMarker = function (place) {
 		map,
 		position: place.geometry.location,
 	});
-	// open a pop-up window to display address for the marker.
+	// open a pop-up window to display address.
 	google.maps.event.addListener(marker, 'click', () => {
 		const content = document.createElement('div');
 		const nameElement = document.createElement('h2');
@@ -52,7 +57,7 @@ var createMarker = function (place) {
 	markers.push(marker);
 };
 
-// Function to search Kroger stores and create markers for them.
+// search Kroger stores and create markers for them.
 var getKrogerStores = function (requestLocation) {
 	markers = [];
 	console.log(markers);

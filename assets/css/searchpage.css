@@ -155,10 +155,9 @@ form {
 	width: 50vw;
 }
 
-/* Styling to make map section visible. */
+/* Making the map visiblee */
 #krogermap {
-	height: 400px;
-	width: 50%;
+	height: 800px;
+	width: 70%;
 	margin: auto;
 }
-
