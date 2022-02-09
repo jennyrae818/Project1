@@ -23,7 +23,7 @@ Currently the application encounters CORS issue when talking to Kroger API. We a
 https://user-images.githubusercontent.com/94947579/153124433-e699582f-8767-4cd3-9526-9122df281671.mp4
 
 
-## User Story
+## Objective
 ```
 As a hungry user
 I want to be able to figure out what to eat. 
@@ -34,7 +34,7 @@ I want to see a recipe's list of the ingredients and lastly
 I want the web application to show me where I can find ingredients for a delicious recipe of my choice.
 ```
 
-## Acceptance Criteria
+## User Story
 ```
 Given that I am indecisive about what I want to eat, or I am new to cooking and don't know where to start, or I am very hungry and I need a quick nutricious 'fix'
 
@@ -59,6 +59,13 @@ Then I can use a store locator map to find a nearby store.
 - HTML, JavaScript, Pure CSS (+ a bit of Bootstrap), jQuery. 
 - API's: [Kroger API](https://developer.kroger.com/reference/) and [Google Maps API](https://developers.google.com/maps)
 - Draw.io (Wireframes).
+```
+
+## Ideas for future development:
+```
+1. Right now we only have a PB&J Sandwich available…. 
+We’d like to add a recipe API. This would allow the user to also search for recipes and then find the ingredients from there. We’ve found one we like but that does have some limitations - Spoonacular 
+2.	Be able to save recipes to a users “profile”
 ```
 
 ## Project Links
