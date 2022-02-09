@@ -60,6 +60,21 @@ Then I can use a store locator map to find a nearby store.
 - API's: [Kroger API](https://developer.kroger.com/reference/) and [Google Maps API](https://developers.google.com/maps)
 - Draw.io (Wireframes).
 ```
+## Ideas for future development:
+```
+-Sign in functionality
+-Recipe API wire up
+-"Build a recipe based on parameters"
+-Search for recipes
+-Save recipes
+-Wire up Instacart API
+-Fix the CORS issue
+-Fix the map to be able to use navigation and location
+-Redo the styling when we get a bit more advanced.
+-Implement modals
+-Landing page asking to sign in for better experience(will mitigate CORS errors partially).
+-Search page asking for a Zip code for better experience or redirecting to separate sections to start anywhere - Recipes, Ingredients, Map, etc
+```
 
 ## Project Links
 Git repository: https://github.com/jennyrae818/Cookify
