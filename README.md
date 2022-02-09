@@ -20,7 +20,10 @@ Currently the application encounters CORS issue when talking to Kroger API. We a
 > & shopping for your ingredients!
 
 ## Screenshot(s)
-- Need to include screenshots here. 
+![landingpage](./assets/images/landingpage.png)
+![searchpage](./assets/images/searchpage.png)
+![mapsearch](./assets/images/mapsearch.png)
+
 
 ## User Story
 ```
