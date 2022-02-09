@@ -19,8 +19,9 @@ Currently the application encounters CORS issue when talking to Kroger API. We a
 > Select store closest to you on a map below.
 > & shopping for your ingredients!
 
-## Screenshot(s)
-- Need to include screenshots here. 
+## Video 
+https://user-images.githubusercontent.com/94947579/153124433-e699582f-8767-4cd3-9526-9122df281671.mp4
+
 
 ## User Story
 ```
