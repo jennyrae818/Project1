@@ -3,7 +3,7 @@
 ## IMPORTANT! 
 Currently the application encounters CORS issue when talking to Kroger API. We are working to mitigate the issue. Meanwhile, to be able to use the web page locally please follow instructions below for your default browser: 
 - Chrome: Please install the following browser extension: [Cross-domain-cors](https://chrome.google.com/webstore/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai).
-- Firefox: Please install the followig browser extension: [Cors-everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search).
+- Firefox: Please install the following browser extension: [Cors-everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search).
 - Safari: Please disable the Access-Control-Allow-Origin in Developer settings. 
 
 ## Description
@@ -11,13 +11,13 @@ Currently the application encounters CORS issue when talking to Kroger API. We a
 > Sometimes you just want to cook something but again, where do you start?
 > Well, if you are unsure where to begin, then we can help. 
 > 
-> This application is intended to do all the legwork for you. All you have to do is pick a recipe and it will find the closest store with the ingredients you need to start your > cooking adventure.
+> This application is intended to do all the legwork for you. All you have to do is pick a recipe and it will find the closest store with the ingredients you need to start your cooking adventure.
 > 
-> To get started just click on the “Take me to the recipes!” botton
+> To get started just click on the “Take me to the recipes!” button
 > Then select a recipe (Sorry, for now we only have PBJ).
-> Click a "Start" button to see where you can find the ingredients throughout store of your choice.
+> Click a "Start" button to see where you can find the ingredients throughout the store of your choice.
 > Select store closest to you on a map below.
-> & shopping for your ingredients!
+> & shop for your ingredients!
 
 ## Video 
 https://user-images.githubusercontent.com/94947579/153124433-e699582f-8767-4cd3-9526-9122df281671.mp4
@@ -62,5 +62,5 @@ Then I can use a store locator map to find a nearby store.
 ```
 
 ## Project Links
-Git repository: https://github.com/jennyrae818/Project1
-Cookify Page: https://jennyrae818.github.io/Project1/
+Git repository: https://github.com/jennyrae818/Cookify
+Cookify Page: https://jennyrae818.github.io/cookify/
