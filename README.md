@@ -19,8 +19,9 @@ Currently the application encounters CORS issue when talking to Kroger API. We a
 > Select store closest to you on a map below.
 > & shopping for your ingredients!
 
-## Screenshot(s)
-- Need to include screenshots here. 
+## Video
+https://user-images.githubusercontent.com/94947579/153124179-4e026054-4c8b-4115-ae7c-daf9d16c925e.mp4
+
 
 ## User Story
 ```
@@ -60,6 +61,6 @@ Then I can use a store locator map to find a nearby store.
 - Draw.io (Wireframes).
 ```
 
-## Project Links
+## Cookify Links
 Git repository: https://github.com/jennyrae818/Project1
 Cookify Page: https://jennyrae818.github.io/Project1/
