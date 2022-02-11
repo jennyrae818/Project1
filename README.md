@@ -78,4 +78,5 @@ Then I can use a store locator map to find a nearby store.
 
 ## Project Links
 Git repository: https://github.com/jennyrae818/Cookify
-Cookify Page: https://jennyrae818.github.io/cookify/
+
+Cookify Page: https://jennyrae818.github.io/Cookify/
