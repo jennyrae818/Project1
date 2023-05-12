@@ -31,14 +31,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-h2 {
-    color: var(--light);
-}
-
-p {
-    color: var(--light);
-}
-
 .box {
     text-align: center;
     border: 5px;
@@ -135,4 +127,29 @@ align-items: center;
     opacity: unset;
 }
 
+#zip {
+	width: 15vw;
+	margin: auto;
+}
 
+#button1 {
+	width: 80px;
+	margin: auto;
+	font-size: 20px;
+}
+
+form {
+	margin: auto;
+	padding: 5px;
+	font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+}
+
+/* Making the map visiblee */
+#krogermap {
+	height: 800px;
+	width: 70%;
+	margin: auto;
+}
